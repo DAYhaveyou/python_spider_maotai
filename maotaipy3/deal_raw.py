@@ -175,7 +175,7 @@ def make_result(file_name):
     f1.close()
     f1.close()
     table = "maotai"
-    message_new = ["192.168.1.2", "root", "rootKa$QZ", "LI_DataBase_spider"]
+    message_new = ["ip", "root", "password", "database"]
     delete_table(table, message_new)
     create_maotai(table, message_new)
     storage_database(date, data, table, message_new)
@@ -198,5 +198,5 @@ def delete_table(table, message):
 
 
 if __name__ == "__main__":
-    message_new3 = ["192.168.1.2", "root", "rootKa$QZ", "LI_DataBase_spider"]
-    create_maotai('maotai1', message_new3)
+    message_new = ["ip", "root", "password", "database"]
+    create_maotai('maotai1', message_new)
